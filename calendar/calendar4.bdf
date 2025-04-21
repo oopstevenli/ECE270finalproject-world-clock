@@ -1,0 +1,560 @@
+(header "graphic" (version "1.3"))
+(pin
+	(input)
+	(rect -56 112 112 128)
+	(text "INPUT" (rect 133 0 161 9)(font "Arial" (font_size 6)))
+	(text "reset" (rect 9 0 61 16)(font "Arial" ))
+	(pt 168 8)
+	(drawing 
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 153 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -56 80 112 96)
+	(text "INPUT" (rect 133 0 161 9)(font "Arial" (font_size 6)))
+	(text "day_increment" (rect 9 0 61 16)(font "Arial" ))
+	(pt 168 8)
+	(drawing 
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 153 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 512 248 680 264)
+	(text "INPUT" (rect 133 0 161 9)(font "Arial" (font_size 6)))
+	(text "year_increment" (rect 9 0 61 16)(font "Arial" ))
+	(pt 168 8)
+	(drawing 
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 153 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 272 200 440 216)
+	(text "INPUT" (rect 133 0 161 9)(font "Arial" (font_size 6)))
+	(text "month_increment" (rect 9 0 61 16)(font "Arial" ))
+	(pt 168 8)
+	(drawing 
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 153 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -56 48 112 64)
+	(text "INPUT" (rect 133 0 161 9)(font "Arial" (font_size 6)))
+	(text "clock" (rect 9 0 61 16)(font "Arial" ))
+	(pt 168 8)
+	(drawing 
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 153 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -56 64 112 80)
+	(text "INPUT" (rect 133 0 161 9)(font "Arial" (font_size 6)))
+	(text "hour_enable" (rect 9 0 61 16)(font "Arial" ))
+	(pt 168 8)
+	(drawing 
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 153 17)(font "Arial" (font_size 6)))
+)
+(pin 
+	(output)
+	(rect 456 -160 632 -144)
+	(text "OUTPUT" (rect 1 0 34 9)(font "Arial" (font_size 6)))
+	(text "LeftYear[6..0]" (rect 90 0 142 16)(font "Arial" ))
+	(pt 0 8)
+	(drawing 
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)(pin 
+	(output)
+	(rect 456 -144 632 -128)
+	(text "OUTPUT" (rect 1 0 34 9)(font "Arial" (font_size 6)))
+	(text "RightYear[6..0]" (rect 90 0 142 16)(font "Arial" ))
+	(pt 0 8)
+	(drawing 
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)(pin 
+	(output)
+	(rect 744 216 920 232)
+	(text "OUTPUT" (rect 1 0 34 9)(font "Arial" (font_size 6)))
+	(text "month_binary[3..0]" (rect 90 0 142 16)(font "Arial" ))
+	(pt 0 8)
+	(drawing 
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)(pin 
+	(output)
+	(rect 856 -88 1032 -72)
+	(text "OUTPUT" (rect 1 0 34 9)(font "Arial" (font_size 6)))
+	(text "day_binary[5..0]" (rect 90 0 142 16)(font "Arial" ))
+	(pt 0 8)
+	(drawing 
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)(pin 
+	(output)
+	(rect 856 -72 1032 -56)
+	(text "OUTPUT" (rect 1 0 34 9)(font "Arial" (font_size 6)))
+	(text "maxDay_binary[5..0]" (rect 90 0 142 16)(font "Arial" ))
+	(pt 0 8)
+	(drawing 
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
+(symbol
+	(rect 232 24 440 168)
+	(text "Day" (rect 5 0 22 12)(font "Arial" ))
+	(text "inst0" (rect 8 128 20 140)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "enable" (rect 0 0 24 12)(font "Arial" ))
+		(text "enable" (rect 21 43 45 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "offset" (rect 0 0 23 12)(font "Arial" ))
+		(text "offset" (rect 21 59 44 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "leap_year" (rect 0 0 40 12)(font "Arial" ))
+		(text "leap_year" (rect 21 75 61 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" ))
+		(text "reset" (rect 21 91 41 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "month[3..0]" (rect 0 0 44 12)(font "Arial" ))
+		(text "month[3..0]" (rect 21 107 65 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "day[5..0]" (rect 0 0 35 12)(font "Arial" ))
+		(text "day[5..0]" (rect 152 27 187 39)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(port
+		(pt 208 48)
+		(output)
+		(text "max_days[5..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "max_days[5..0]" (rect 124 43 187 55)(font "Arial" ))
+		(line (pt 208 48)(pt 192 48)(line_width 3))
+	)
+	(port
+		(pt 208 64)
+		(output)
+		(text "end_of_month" (rect 0 0 59 12)(font "Arial" ))
+		(text "end_of_month" (rect 128 59 187 71)(font "Arial" ))
+		(line (pt 208 64)(pt 192 64)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 128)(line_width 1))
+	)
+)
+
+(symbol
+	(rect 496 8 712 120)
+	(text "Month" (rect 5 0 29 12)(font "Arial" ))
+	(text "inst1" (rect 8 96 20 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" ))
+		(text "reset" (rect 21 43 41 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "end_of_month" (rect 0 0 59 12)(font "Arial" ))
+		(text "end_of_month" (rect 21 59 80 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "offset" (rect 0 0 23 12)(font "Arial" ))
+		(text "offset" (rect 21 75 44 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "end_of_year" (rect 0 0 53 12)(font "Arial" ))
+		(text "end_of_year" (rect 142 27 195 39)(font "Arial" ))
+		(line (pt 216 32)(pt 200 32)(line_width 1))
+	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "month[3..0]" (rect 0 0 44 12)(font "Arial" ))
+		(text "month[3..0]" (rect 151 43 195 55)(font "Arial" ))
+		(line (pt 216 48)(pt 200 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 96)(line_width 1))
+	)
+)
+
+(symbol
+	(rect 760 8 960 120)
+	(text "Year" (rect 5 0 25 12)(font "Arial" ))
+	(text "inst2" (rect 8 96 20 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" ))
+		(text "reset" (rect 21 43 41 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "end_of_year" (rect 0 0 53 12)(font "Arial" ))
+		(text "end_of_year" (rect 21 59 74 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "offset" (rect 0 0 23 12)(font "Arial" ))
+		(text "offset" (rect 21 75 44 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "year[15..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "year[15..0]" (rect 137 27 179 39)(font "Arial" ))
+		(line (pt 200 32)(pt 184 32)(line_width 3))
+	)
+	(port
+		(pt 200 48)
+		(output)
+		(text "leap_year" (rect 0 0 40 12)(font "Arial" ))
+		(text "leap_year" (rect 139 43 179 55)(font "Arial" ))
+		(line (pt 200 48)(pt 184 48)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 96)(line_width 1))
+	)
+)
+
+(symbol
+	(rect 224 -184 456 -104)
+	(text "splitYear" (rect 5 0 39 12)(font "Arial" ))
+	(text "inst3" (rect 8 64 20 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "year_binary[15..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "year_binary[15..0]" (rect 21 27 94 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "leftNum[6..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "leftNum[6..0]" (rect 160 27 211 39)(font "Arial" ))
+		(line (pt 232 32)(pt 216 32)(line_width 3))
+	)
+	(port
+		(pt 232 48)
+		(output)
+		(text "rightNum[6..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "rightNum[6..0]" (rect 155 43 211 55)(font "Arial" ))
+		(line (pt 232 48)(pt 216 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 216 64)(line_width 1))
+	)
+)
+
+(connector
+	(pt 712 40)
+	(pt 736 40))
+(connector
+	(text "end_of_year" (rect 730 23 742 89)(font "Arial")(vertical))
+	(pt 736 40)
+	(pt 736 72))
+(connector
+	(pt 736 72)
+	(pt 760 72))
+(connector
+	(pt 200 56)
+	(pt 200 8))
+(connector
+	(pt 200 8)
+	(pt 472 8))
+(connector
+	(pt 472 8)
+	(pt 472 -8))
+(connector
+	(pt 472 -8)
+	(pt 752 -8))
+(connector
+	(pt 752 -8)
+	(pt 752 40))
+(connector
+	(pt 752 40)
+	(pt 760 40))
+(connector
+	(pt 232 120)
+	(pt 112 120))
+(connector
+	(pt 192 120)
+	(pt 192 192))
+(connector
+	(pt 192 192)
+	(pt 480 192))
+(connector
+	(pt 480 192)
+	(pt 480 56))
+(connector
+	(pt 480 56)
+	(pt 496 56))
+(connector
+	(pt 760 56)
+	(pt 744 56))
+(connector
+	(pt 744 56)
+	(pt 744 128))
+(connector
+	(pt 744 128)
+	(pt 480 128))
+(connector
+	(pt 712 56)
+	(pt 720 56)
+	(bus))
+(connector
+	(text "b[3..0]" (rect 714 119 726 161)(font "Arial")(vertical))
+	(pt 720 56)
+	(pt 720 224)
+	(bus))
+(connector
+	(pt 720 176)
+	(pt 216 176)
+	(bus))
+(connector
+	(pt 216 176)
+	(pt 216 136)
+	(bus))
+(connector
+	(pt 216 136)
+	(pt 232 136)
+	(bus))
+(connector
+	(pt 112 72)
+	(pt 232 72))
+(connector
+	(pt 232 88)
+	(pt 112 88))
+(connector
+	(pt 960 56)
+	(pt 968 56))
+(connector
+	(pt 968 56)
+	(pt 968 144))
+(connector
+	(pt 968 144)
+	(pt 456 144))
+(connector
+	(pt 456 144)
+	(pt 456 184))
+(connector
+	(pt 456 184)
+	(pt 200 184))
+(connector
+	(pt 200 184)
+	(pt 200 104))
+(connector
+	(pt 200 104)
+	(pt 232 104))
+(connector
+	(text "a[15..0]" (rect 948 34 996 46)(font "Arial"))
+	(pt 960 40)
+	(pt 984 40)
+	(bus))
+(connector
+	(text "c[5..0]" (rect 427 50 469 62)(font "Arial"))
+	(pt 440 56)
+	(pt 456 56)
+	(bus))
+(connector
+	(pt 472 8)
+	(pt 472 40))
+(connector
+	(pt 472 40)
+	(pt 496 40))
+(connector
+	(pt 496 88)
+	(pt 464 88))
+(connector
+	(pt 760 88)
+	(pt 728 88))
+(connector
+	(pt 464 88)
+	(pt 464 208))
+(connector
+	(pt 728 88)
+	(pt 728 256))
+(connector
+	(pt 728 256)
+	(pt 680 256))
+(connector
+	(pt 440 208)
+	(pt 464 208))
+(connector
+	(text "a[15..0]" (rect 188 -158 236 -146)(font "Arial"))
+	(pt 200 -152)
+	(pt 224 -152)
+	(bus))
+(connector
+	(pt 160 56)
+	(pt 200 56))
+(connector
+	(pt 200 56)
+	(pt 232 56))
+(connector
+	(pt 496 72)
+	(pt 456 72))
+(connector
+	(pt 456 72)
+	(pt 456 88))
+(connector
+	(text "end_of_month" (rect 412 82 484 94)(font "Arial"))
+	(pt 456 88)
+	(pt 440 88))
+(connector
+	(text "l[5..0]" (rect 423 66 465 78)(font "Arial"))
+	(pt 440 72)
+	(pt 448 72)
+	(bus))
+(connector
+	(pt 160 56)
+	(pt 112 56))
+(connector
+	(pt 720 224)
+	(pt 744 224)
+	(bus))
+(connector
+	(text "c[5..0]" (rect 823 -86 865 -74)(font "Arial"))
+	(pt 832 -80)
+	(pt 856 -80)
+	(bus))
+(connector
+	(text "l[5..0]" (rect 823 -70 865 -58)(font "Arial"))
+	(pt 832 -64)
+	(pt 856 -64)
+	(bus))
+(junction (pt 200 56))
+(junction (pt 472 8))
+(junction (pt 192 120))
+(junction (pt 480 128))
+(junction (pt 720 176))
+/***{"wire_color_list": ["green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green"]}***/
