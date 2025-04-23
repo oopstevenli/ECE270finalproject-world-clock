@@ -5,9 +5,12 @@ module digit2Display (
     output logic [7:0] right
 );
     logic [3:0] tens, ones;
+    logic [6:0] temp_tens, temp_ones;
     always_comb begin
-        tens = value / 10;
-        ones = value % 10;
+        temp_tens = value / 10;
+        temp_ones = value % 10;
+        tens = temp_tens[3:0];
+        ones = temp_ones[3:0];
     end
     function automatic [7:0] seg_decode(input logic [3:0] digit);
         case (digit)
