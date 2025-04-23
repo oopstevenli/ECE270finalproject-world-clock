@@ -51,7 +51,7 @@ module calendar (
 		.leftNum(LeftYear),
 		.rightNum(RightYear)
 	);
-	assign day_binary = c;
-	assign maxDay_binary = l;
-	assign month_binary = b;
+	assign day_binary = {1'b0, c};
+	assign maxDay_binary = {1'b0, l};
+	assign month_binary = {3'b000, b};
 endmodule
