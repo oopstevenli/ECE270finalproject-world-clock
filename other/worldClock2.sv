@@ -83,7 +83,7 @@ module worldClock2 (
 		.minutes(SYNTHESIZED_WIRE_4)
 	);
 	calendar b2v_inst7(
-		.hour_enable(SYNTHESIZED_WIRE_18),
+		.hour_enable(calendar_en),
 		.clock(SYNTHESIZED_WIRE_21),
 		.reset(pb[0]),
 		.day_increment(pb[2]),
