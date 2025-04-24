@@ -1,6 +1,6 @@
 module worldClock2 (
 	input  logic hz100,
-	input  logic [6:0] pb,
+	input  logic [7:0] pb,
 	output logic [7:0] ss0,
 	output logic [7:0] ss1,
 	output logic [7:0] ss2,
@@ -10,7 +10,8 @@ module worldClock2 (
 	output logic [7:0] ss6,
 	output logic [7:0] ss7
 	);
-
+	logic calendar_en;
+	or(calendar_en, pb[8], SYNTHESIZED_WIRE_18);
 	logic [6:0] SYNTHESIZED_WIRE_0;
 	logic [6:0] SYNTHESIZED_WIRE_1;
 	logic [6:0] SYNTHESIZED_WIRE_2;
