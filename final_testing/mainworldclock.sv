@@ -20,7 +20,7 @@ module top (
   logic calendar_en;
   wire enable_dummy;
   wire [6:0] maxDaydummy;
-	or(calendar_en, pb[8], SYNTHESIZED_WIRE_18);
+	or(calendar_en, pb[4], SYNTHESIZED_WIRE_18);
 	logic [6:0] SYNTHESIZED_WIRE_0;
 	logic [6:0] SYNTHESIZED_WIRE_1;
 	logic [6:0] SYNTHESIZED_WIRE_2;
@@ -40,7 +40,7 @@ module top (
 	logic [5:0] SYNTHESIZED_WIRE_17;
 	logic SYNTHESIZED_WIRE_18;
 	muxModule b2v_inst0(
-		.select(~pb[1]),
+		.select(~pb[3]),
 		.day(SYNTHESIZED_WIRE_0),
 		.hour_1(SYNTHESIZED_WIRE_1),
 		.hour_2(SYNTHESIZED_WIRE_2),
@@ -76,7 +76,7 @@ module top (
 	);
 	clock24 b2v_inst5(
 		.clk(SYNTHESIZED_WIRE_21),
-		.reset(pb[0]),
+		.reset(pb[7]),
 		.offset_hours(SYNTHESIZED_WIRE_13),
 		.offset_mins(SYNTHESIZED_WIRE_14),
 		.cycle(SYNTHESIZED_WIRE_18),
@@ -86,7 +86,7 @@ module top (
 	);
 	clock24 b2v_inst6(
 		.clk(SYNTHESIZED_WIRE_21),
-		.reset(pb[0]),
+		.reset(pb[7]),
 		.cycle(enable_dummy),
 		.offset_hours(SYNTHESIZED_WIRE_16),
 		.offset_mins(SYNTHESIZED_WIRE_17),
@@ -97,10 +97,10 @@ module top (
 	calendar b2v_inst7(
 		.hour_enable(calendar_en),
 		.clock(hz100),
-		.reset(pb[0]),
+		.reset(pb[7]),
 		.day_increment(pb[2]),
-		.year_increment(pb[3]),
-		.month_increment(pb[4]),
+		.year_increment(pb[0]),
+		.month_increment(pb[1]),
 		.day_binary(SYNTHESIZED_WIRE_0),
 		.LeftYear(SYNTHESIZED_WIRE_6),
 		.maxDay_binary(maxDaydummy),
@@ -109,7 +109,7 @@ module top (
 	);
 	changeClock b2v_inst8(
 		.clock(SYNTHESIZED_WIRE_21),
-		.reset(pb[0]),
+		.reset(pb[7]),
 		.hour_increment(pb[5]),
 		.min_increment(pb[6]),
 		.london_hours(SYNTHESIZED_WIRE_16),
@@ -119,7 +119,7 @@ module top (
 	);
 	clk100HzTo1Hz b2v_inst9(
 		.clk100hz(hz100),
-		.reset(pb[0]),
+		.reset(pb[7]),
 		.clk1hz(SYNTHESIZED_WIRE_21)
 	);
 endmodule
@@ -194,7 +194,7 @@ module clk100HzTo1Hz(
             counting <= 0;
             clk1hz <= 0;
         end else begin
-            if (counting == 49) begin
+            if (counting == 50) begin
                 counting <= 0;
                 clk1hz <= ~clk1hz;
             end else begin
