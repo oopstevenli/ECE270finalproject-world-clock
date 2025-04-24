@@ -108,6 +108,6 @@ module worldClock2 (
 		.reset(pb[0]),
 		.clk1hz(SYNTHESIZED_WIRE_21)
 	);
-	defparam b2v_inst9.DIVISOR = 12000000;
+
 endmodule
 
